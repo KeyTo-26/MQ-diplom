@@ -15,6 +15,7 @@
             <a href="#0">
               <img class="header-logo" src="svg/noemi-logo.svg" alt="NOEMI">
             </a>
+            
             <nav class="menu">
               <ul class="menu-list">
                 <li class="menu-list__item">
@@ -36,8 +37,17 @@
                   <a class="menu-link" href="#0">Контакты</a>
                 </li>
               </ul>
-              <input class="check-burger" type="checkbox">
+
+              <div class="icon-menu">
+                <button class="menu-burger" type="button">
+                  <span class="menu-burger-text">Закрыть окно</span>
+                </button>
+              </div>
+
+
             </nav>
+
+            
           </div>
           <h1 class="title header-title">Блог о творчестве, спорте, и образе жизни</h1>
         </div> 
@@ -300,12 +310,26 @@
         <h2 class="title title-line section-title">Наши изделия</h2>
         <div class="shop-boxes">  
           <article class="shop-box"> 
-            <img class="shop-img-item" src="images/shop-item-desk1.jpg" alt="item">
+            <picture class="shop-img shop-img-item">
+              <source
+                media="(max-width:640px)"
+                srcset="images/shop-item-mobile1.jpg"> 
+                
+              <source
+                media="(min-width:641px) and (max-width:1199px)"
+                srcset="images/shop-item-tablet1.jpg">
+              <img class="shop-img-item" src="images/shop-item-desk1.jpg" alt="item">
+          </picture>
+            
             <div class="border">
               <h3 class="shop-title-item title">Подушки на диван</h3>
               <p class="article-preview">Набор из двух подушек с модными принтами. Видео о создании <a class="link-base">здесь</a>.</p>
               <div class="shop-buy-box">
-                <p class="shop-price price-pillow rub1">800 &#8381;</p>
+                <div class="shop-price">
+                  <span class="old-price">1000 &#8381;</span>
+                  <span class="new-price">800 &#8381;</span>
+                </div>
+                
                 <span class="visually-hidden">Перейти в магазин</span>
                 <a class="btn-link btn" href="#">В магазин</a>
               </div>
@@ -313,12 +337,25 @@
           </article>
 
           <article class="shop-box">  
-            <img class="shop-img-item" src="images/shop-item-desk2.jpg" alt="item">
+            <picture class="shop-img shop-img-item">
+              <source
+                media="(max-width:640px)"
+                srcset="images/shop-item-mobile2.jpg"> 
+              <source
+                media="(min-width:641px) and (max-width:1199px)"
+                srcset="images/shop-item-tablet2.jpg">
+                 
+              <img class="shop-img-item" src="images/shop-item-desk2.jpg" alt="item">
+          </picture>
+
             <div class="border">
               <h3 class="shop-title-item title">Кукла &laquo;Зайчик&raquo;</h3>
               <p class="article-preview">Интерьерная рукодельная кукла &laquo;Зайчик&raquo;, созданию которой посвящена <a class="link-base">весенняя серия постов</a> в блоге и несколько подкастов.</p>
               <div class="shop-buy-box">
-                <p class="shop-price">3500 &#8381;</p>
+                <div class="shop-price">
+                  <span class="new-price">3500 &#8381;</span>
+                </div>
+
                 <span class="visually-hidden">Перейти в магазин</span>
                 <a class="btn-link btn" href="#">В магазин</a>
               </div>
@@ -326,17 +363,35 @@
           </article>
 
           <article class="shop-box">   
-            <img class="shop-img-item" src="images/shop-item-desk3.jpg" alt="item">
+            <picture class="shop-img shop-img-item">
+              <source
+                media="(max-width:640px)"
+                srcset="images/shop-item-mobile3.jpg">
+                <source
+                media="(min-width:641px) and (max-width:1199px)"
+                srcset="images/shop-item-tablet3.jpg">
+                
+              <img class="shop-img-item" src="images/shop-item-desk3.jpg" alt="item">
+          </picture>
+
             <div class="border">
               <h3 class="shop-title-item title">Шестиугольная рамка</h3>
               <p class="article-preview">Необычная рамка для украшения дома из видео <a class="link-base">&laquo;Как сделать рамку из подручных средств за 30 минут&raquo;</a></p>
               <div class="shop-buy-box">
-                <p class="shop-price price-frame rub2">400 &#8381;</p>
+                <div class="shop-price">
+                  <span class="old-price">500 &#8381;</span>
+                  <span class="new-price">400 &#8381;</span>
+                </div>
+                
                 <span class="visually-hidden">Перейти в магазин</span>
                 <a class="btn-link btn" href="#">В магазин</a>
               </div>
             </div> 
           </article>
+
+          
+
+
         </div>  
       </section>  
   
@@ -345,13 +400,13 @@
         <address>
           <ul class="socials">
             <li class="social-item">
-              <a href="svg/001-dribbble.svg" class="social-link social-link-dribbble"><span class="visually-hidden">dribbble</span></a>
+              <a href="svg/001-dribbble.svg" class="social-link social-link-dribbble" alt="dribbble"><span class="visually-hidden">dribbble</span></a>
             </li>
             <li class="social-item">
-              <a href="svg/001-pinterest.svg" class="social-link social-link-pinterest"><span class="visually-hidden">pinterest</span></a>
+              <a href="svg/001-pinterest.svg" class="social-link social-link-pinterest" alt="pinterest"><span class="visually-hidden">pinterest</span></a>
             </li>
             <li class="social-item">
-              <a href="svg/003-tumblr.svg" class="social-link social-link-tumblr"><span class="visually-hidden">tumblr</span></a>
+              <a href="svg/003-tumblr.svg" class="social-link social-link-tumblr" alt="tumblr"><span class="visually-hidden">tumblr</span></a>
             </li>
           </ul>
         </address>
@@ -393,7 +448,7 @@
                 <div class="form-row">
                   <span class="feedback__hint">Вы подписаны на e-mail рассылку?</span>
                   <label class="radio-group">
-                    <input class="radio" type="radio" name="radio-group" value="yes">
+                    <input class="radio" type="radio" name="radio-group" value="yes" required>
                     <span class="radio-group__text">Да</span>
                   </label>
                   <label class="radio-group">
